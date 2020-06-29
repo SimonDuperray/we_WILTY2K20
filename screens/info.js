@@ -18,7 +18,7 @@ export default function Info({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <Text>Info Screen</Text>
+            <Text>~~PARTIE INFORMATIQUE~~</Text>
             <FlatList
                 data={notions}
                 renderItem={({ item }) => (
