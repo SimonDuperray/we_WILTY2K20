@@ -2,23 +2,31 @@ import { createStackNavigator } from 'react-navigation-stack';
 import Info from '../screens/info';
 import ReviewInfo from '../screens/reviewInfo';
 import Home from '../screens/home';
+import Header from '../shared/header';
+import React from 'react';
 
 const screens = {
     Home: {
-        screen: Home
+        screen: Home,
+        navigationOptions: ({ navigation }) => {
+            return {
+                headerTitle: () => <Header navigation={navigation}/>,
+            }
+        }
+        // navigationOptions: {
+        //     headerTitle: () => <Header />
+        // }
     },
     Info: {
         screen: Info,
         navigationOptions: {
             title: 'Informatique -> Formations',
-            // headerStyle: { backgroundColor: '#ABB2B9' }
         }
     },
     ReviewInfo: {
         screen: ReviewInfo,
         navigationOptions: {
             title: 'Informatique -> Articles',
-            // headerStyle: { backgroundColor: '#ABB2B9' }
         }
     }
 }
