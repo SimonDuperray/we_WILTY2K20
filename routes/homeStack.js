@@ -5,13 +5,26 @@ import ReviewInfo from '../screens/reviewInfo';
 
 const screens = {
     Info: {
-        screen: Info
+        screen: Info,
+        navigationOptions: {
+            title: 'Informatique -> Formations',
+            // headerStyle: { backgroundColor: '#ABB2B9' }
+        }
     },
     ReviewInfo: {
-        screen: ReviewInfo
+        screen: ReviewInfo,
+        navigationOptions: {
+            title: 'Informatique -> Articles',
+            // headerStyle: { backgroundColor: '#ABB2B9' }
+        }
     }
 }
 
-const HomeStack = createStackNavigator(screens);
+const HomeStack = createStackNavigator(screens, {
+    defaultNavigationOptions: {
+        headerTintColor: '#444',
+        headerStyle: { backgroundColor: '#ABB2B9' }
+    }
+});
 
 export default createAppContainer(HomeStack);
