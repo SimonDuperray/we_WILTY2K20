@@ -36,6 +36,6 @@ const styles = StyleSheet.create({
     icon: {
         position: 'absolute',
         left: 10,
-        color: 'black'
+        color: '#34495E',
     }
 })

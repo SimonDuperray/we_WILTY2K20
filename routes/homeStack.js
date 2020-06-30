@@ -13,9 +13,6 @@ const screens = {
                 headerTitle: () => <Header navigation={navigation}/>,
             }
         }
-        // navigationOptions: {
-        //     headerTitle: () => <Header />
-        // }
     },
     Info: {
         screen: Info,
