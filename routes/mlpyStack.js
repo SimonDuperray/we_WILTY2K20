@@ -1,11 +1,11 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import Info from '../screens/info';
+import MLPY from '../screens/mlpy';
 import Header from '../shared/header';
 import React from 'react';
 
 const screens = {
-    Info: {
-        screen: Info,
+    MLPY: {
+        screen: MLPY,
         navigationOptions: ({ navigation }) => {
             return {
                 headerTitle: () => <Header navigation={navigation}/>,
@@ -14,11 +14,11 @@ const screens = {
     }
 }
 
-const InfoStack = createStackNavigator(screens, {
+const MLPYStack = createStackNavigator(screens, {
     defaultNavigationOptions: {
         headerTintColor: '#444',
         headerStyle: { backgroundColor: '#ABB2B9' }
     }
 });
 
-export default InfoStack;
+export default MLPYStack;

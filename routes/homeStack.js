@@ -1,5 +1,4 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import Info from '../screens/info';
 import ReviewInfo from '../screens/reviewInfo';
 import Home from '../screens/home';
 import Header from '../shared/header';
@@ -12,12 +11,6 @@ const screens = {
             return {
                 headerTitle: () => <Header navigation={navigation}/>,
             }
-        }
-    },
-    Info: {
-        screen: Info,
-        navigationOptions: {
-            title: 'Informatique -> Formations',
         }
     },
     ReviewInfo: {
