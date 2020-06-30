@@ -1,25 +1,24 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import Home from '../screens/home';
+import GIT from '../screens/git';
 import Header from '../shared/header';
 import React from 'react';
 
 const screens = {
-    Home: {
-        screen: Home,
+    GIT: {
+        screen: GIT,
         navigationOptions: ({ navigation }) => {
             return {
                 headerTitle: () => <Header navigation={navigation}/>,
             }
         }
-    },
+    }
 }
 
-const HomeStack = createStackNavigator(screens, {
+const GITStack = createStackNavigator(screens, {
     defaultNavigationOptions: {
         headerTintColor: '#444',
         headerStyle: { backgroundColor: '#ABB2B9' }
     }
 });
 
-// export default createAppContainer(HomeStack);
-export default HomeStack;
+export default GITStack;
