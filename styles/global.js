@@ -9,10 +9,10 @@ export const globalStyles = StyleSheet.create({
         fontFamily: 'nunito-regular',
         fontSize: 18,
         color: '#333',
-        textAlign: 'center'
+        textAlign: 'center',
     },
     paragraph: {
         marginVertical: 8,
         lineHeight: 20,
-    }
+    },
 })
