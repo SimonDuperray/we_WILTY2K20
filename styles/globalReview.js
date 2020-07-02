@@ -24,7 +24,8 @@ export const globalReviews = StyleSheet.create({
         borderBottomWidth: 1.5,
         borderBottomColor: 'grey',
         paddingBottom: 10,
-        paddingTop: 10
+        paddingTop: 10,
+        marginBottom: 10
     },
     command: {
         fontWeight: 'bold',
@@ -35,5 +36,18 @@ export const globalReviews = StyleSheet.create({
         color: 'grey',
         flexWrap: 'wrap',
         flex: 1,
-    }
+    },
+    chapitre: {
+        marginRight: 0,
+        marginBottom: 10,
+    },
+    part: {
+        marginTop: 10,
+    },
+    partTitle: {
+        fontWeight: 'bold',
+        fontSize: 17,
+        textDecorationLine: 'underline',
+        marginBottom: 10,
+    },
 })

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text } from 'react-native';
 
-const NewText = ({ children }) => {
+const NewText = ({ children, style }) => {
     return (
-      <Text style={{ marginBottom: 10 }}>{children}</Text>
+      <Text style={[{ marginBottom: 10 }, style]}>{children}</Text>
     );
 }
 
