@@ -54,4 +54,31 @@ export const globalReviews = StyleSheet.create({
         color: 'blue',
         marginBottom: 10,
     },
+    summary: {
+        borderWidth: 1,
+        padding: 20,
+        paddingBottom: 10,
+        paddingTop: 10,
+        marginBottom: 15,
+        backgroundColor: '#5D6D7E'
+    },
+    titleSummary: {
+        textAlign: 'center',
+        marginBottom: 10,
+        fontSize: 15,
+        textDecorationLine: 'underline',
+    },
+    summaryItem: {
+        marginBottom: 10,
+    },
+    firstStage: {
+        marginBottom: 5,
+        paddingLeft: 0,
+        fontWeight: 'bold',
+        fontSize: 14,
+        marginBottom: 10,
+    },
+    secondStage: {
+        paddingLeft: 10
+    }
 })

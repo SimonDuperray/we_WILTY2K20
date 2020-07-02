@@ -8,7 +8,7 @@ export default function Home() {
         <View style={globalStyles.container}>
             <Text style={styles.welcomeOnWilty}>Bienvenue Simon !</Text>
             <Text style={globalStyles.titleText}>Cette application rescence toutes les notions que tu as appris cette année !</Text>
-            <Text style={styles.article}>Il y a actuellement 2 articles disponibles.</Text>
+            <Text style={styles.article}>Il y a actuellement 3 articles disponibles.</Text>
         </View>
     )
 }

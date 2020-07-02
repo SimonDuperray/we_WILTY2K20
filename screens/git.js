@@ -7,6 +7,24 @@ export default function GIT() {
         <ScrollView>
 
             <View style={globalReviews.container}>
+
+                <View style={globalReviews.summary}>
+                    <Text style={globalReviews.titleSummary}>
+                        Sommaire:
+                    </Text>
+                    <Text style={globalReviews.firstStage}>
+                        1. Commandes Git
+                    </Text>
+                    <Text style={globalReviews.firstStage}>
+                        2. Git Branch
+                    </Text>
+                    <Text style={globalReviews.firstStage}>
+                        3. Remisage
+                    </Text>
+                    <Text style={globalReviews.firstStage}>
+                        4. Push on GitHub
+                    </Text>
+                </View>
                 
                 <View style={globalReviews.commandContainer}>
                     <Text style={globalReviews.titleText}>
