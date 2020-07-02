@@ -143,6 +143,10 @@ export default function GIT() {
                         <Text style={globalReviews.command}>git push -u origin master :</Text>
                         <Text style={globalReviews.description}>Envoyer le commit sur GitHub.</Text>
                     </View>
+                    <View style={globalReviews.newCommand}>
+                        <Text style={globalReviews.command}>git push origin master --force :</Text>
+                        <Text style={globalReviews.description}>Si bug avec la commande précédente.</Text>
+                    </View>
                 </View>
             </View>
         </ScrollView>
