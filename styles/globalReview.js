@@ -50,4 +50,7 @@ export const globalReviews = StyleSheet.create({
         textDecorationLine: 'underline',
         marginBottom: 10,
     },
+    linkedText: {
+        color: 'blue'
+    }
 })

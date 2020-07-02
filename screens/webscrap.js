@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView, Image, StyleSheet } from 'react-native';
+import { View, Text, ScrollView, Linking } from 'react-native';
 import { globalStyles } from '../styles/global';
 import { globalReviews } from '../styles/globalReview';
 import { Puce } from '../components/puceList';
@@ -751,7 +751,7 @@ export default function WEBSCRAP() {
 
                         <View style={globalReviews.newCommand}>
                             <Text style={globalReviews.command}>
-                                offences = parser.select('#faues')[0]
+                                offences = parser.select('#fautes')[0]
                             </Text>
                         </View>
 
@@ -804,6 +804,14 @@ export default function WEBSCRAP() {
                         <Text style={globalReviews.partTitle}>
                             Site Météo
                         </Text>
+
+                        <Text
+                            style={globalReviews.linkedText}
+                            onPress={() => {
+                                Linking.openURL('https://stackoverflow.com/questions/34771462/react-native-touchable-highlight-open-link-on-press');
+                            }}>
+                                Click me
+                            </Text>
 
                         <RowView>
                             <Puce />
