@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text, ScrollView, StyleSheet, Image } from 'react-native';
+import { View, Text, ScrollView, StyleSheet, Image, Linking } from 'react-native';
 import { globalReviews } from '../styles/globalReview';
 import { Puce } from '../components/puceList';
 import { NewText } from '../components/newText';
 import { RowView } from '../components/rowView';
+import { LinkedSymb } from '../components/linkedText';
 
 export default function MLPY() {
     return (
@@ -88,6 +89,19 @@ export default function MLPY() {
 
                     <View style={globalReviews.part}>
                         <Text style={globalReviews.partTitle}>Fonction Coût - MSE</Text>
+
+                        <RowView>
+                            <LinkedSymb />
+                            <Text 
+                                style={globalReviews.linkedText}
+                                onPress={() => {
+                                    Linking.openURL('https://fr.wikipedia.org/wiki/Erreur_quadratique_moyenne');
+                                }}
+                            >
+                                Page Wikipédia
+                            </Text>
+                        </RowView>
+
                         <RowView>
                             <Puce />
                             <NewText style={styles.Text}>
@@ -119,6 +133,18 @@ export default function MLPY() {
                     <View style={globalReviews.part}>
                         <Text style={globalReviews.partTitle}>Méthode des Moindres Carrés</Text>
 
+                        <RowView>
+                            <LinkedSymb />
+                            <Text 
+                                style={globalReviews.linkedText}
+                                onPress={() => {
+                                    Linking.openURL('https://fr.wikipedia.org/wiki/M%C3%A9thode_des_moindres_carr%C3%A9s#:~:text=La%20m%C3%A9thode%20des%20moindres%20carr%C3%A9s%2C%20ind%C3%A9pendamment%20%C3%A9labor%C3%A9e%20par%20Legendre%20et,mod%C3%A8le%20peut%20prendre%20diverses%20formes.');
+                                }}
+                            >
+                                Page Wikipédia
+                            </Text>
+                        </RowView>
+
                         <Image source={require('../assets/mmc1.png')}/>
                         <Image source={require('../assets/mmc2.png')} />
 
@@ -148,6 +174,18 @@ export default function MLPY() {
 
                     <View style={globalReviews.part}>
                         <Text style={globalReviews.partTitle}>Descente de Gradient</Text>
+
+                        <RowView>
+                            <LinkedSymb />
+                            <Text 
+                                style={globalReviews.linkedText}
+                                onPress={() => {
+                                    Linking.openURL('https://fr.wikipedia.org/wiki/Algorithme_du_gradient');
+                                }}
+                            >
+                                Page Wikipédia
+                            </Text>
+                        </RowView>
 
                         <RowView>
                             <Puce />
@@ -228,6 +266,18 @@ export default function MLPY() {
                         <Text style={globalReviews.partTitle}>Expression de forme fermée</Text>
 
                         <RowView>
+                            <LinkedSymb />
+                            <Text 
+                                style={globalReviews.linkedText}
+                                onPress={() => {
+                                    Linking.openURL('https://fr.wikipedia.org/wiki/Expression_de_forme_ferm%C3%A9e');
+                                }}
+                            >
+                                Page Wikipédia
+                            </Text>
+                        </RowView>
+
+                        <RowView>
                             <NewText>
                                 A développer
                             </NewText>
@@ -239,6 +289,18 @@ export default function MLPY() {
 
                     <View style={globalReviews.part}>
                         <Text style={globalReviews.partTitle}>Coefficient de Détermination</Text>
+
+                        <RowView>
+                            <LinkedSymb />
+                            <Text 
+                                style={globalReviews.linkedText}
+                                onPress={() => {
+                                    Linking.openURL('https://fr.wikipedia.org/wiki/Coefficient_de_d%C3%A9termination');
+                                }}
+                            >
+                                Page Wikipédia
+                            </Text>
+                        </RowView>
 
                         <Image source={require('../assets/coefdeter.png')}/>
 

@@ -51,6 +51,7 @@ export const globalReviews = StyleSheet.create({
         marginBottom: 10,
     },
     linkedText: {
-        color: 'blue'
-    }
+        color: 'blue',
+        marginBottom: 10,
+    },
 })
