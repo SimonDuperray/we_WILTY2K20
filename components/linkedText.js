@@ -1,10 +1,11 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
+import { Icon } from 'react-native-elements';
 
-const LinkedText = ({ children, style }) => {
+const LinkedSymb = ({ children, style }) => {
     return (
-      <Text style={[{ marginBottom: 10 }, style]}>{children}</Text>
+      <Icon name="explore" size={14} color='blue'/>
     );
 }
 
-export { LinkedText };
+export { LinkedSymb };

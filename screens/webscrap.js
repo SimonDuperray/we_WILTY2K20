@@ -5,6 +5,7 @@ import { globalReviews } from '../styles/globalReview';
 import { Puce } from '../components/puceList';
 import { NewText } from '../components/newText';
 import { RowView } from '../components/rowView';
+import { LinkedSymb } from '../components/linkedText';
 
 export default function WEBSCRAP() {
     return (
@@ -293,9 +294,23 @@ export default function WEBSCRAP() {
                             <Text style={globalReviews.description}>
                                Retourne un dictionnaire (important key: 'Content Type').
                             </Text>
+
                         </View>
 
                     </View>
+
+                    <RowView>
+                            <LinkedSymb />
+                            <Text
+                                style={globalReviews.linkedText}
+                                onPress={() => {
+                                    Linking.openURL('https://github.com/Kartodix/WEBSCRAPINGPY/tree/master/S1%20APIs%20Scrapping');
+                                }}
+                            >
+                                Voir le repository.
+                            </Text>
+                    </RowView>
+                        
                 </View>
 
                 {/* CHAPITRE AUTHENTIFIACATION API */}
@@ -541,6 +556,19 @@ export default function WEBSCRAP() {
                         </View>
 
                     </View>
+
+                    <RowView>
+                            <LinkedSymb />
+                            <Text
+                                style={globalReviews.linkedText}
+                                onPress={() => {
+                                    Linking.openURL('https://github.com/Kartodix/WEBSCRAPINGPY/tree/master/S2%20AUTHENTIFICATION');
+                                }}
+                            >
+                                Voir le repository.
+                            </Text>
+                    </RowView>
+
                 </View>
 
                 {/* CHAPITRE AUTHENTIFIACATION API */}
@@ -772,6 +800,18 @@ export default function WEBSCRAP() {
 
                     </View>
 
+                    <RowView>
+                            <LinkedSymb />
+                            <Text
+                                style={globalReviews.linkedText}
+                                onPress={() => {
+                                    Linking.openURL('https://github.com/Kartodix/WEBSCRAPINGPY/tree/master/S4%20WEB%20SCRAPPING');
+                                }}
+                            >
+                                Voir le repository.
+                            </Text>
+                    </RowView>
+
                 </View>
 
                 {/* CHAPITRE PROJETS */}
@@ -790,11 +830,15 @@ export default function WEBSCRAP() {
                         </Text>
 
                         <RowView>
-                            <Puce />
-                            <NewText>
-                                A developper
-                            </NewText>
-                        </RowView> 
+                            <LinkedSymb />
+                            <Text
+                                style={globalReviews.linkedText}
+                                onPress={() => {
+                                    Linking.openURL('https://github.com/Kartodix/WEBSCRAPINGPY/tree/master/S3%20CAS%20PRATIQUE%20REDDIT');
+                            }}>
+                            Voir le repository</Text>
+                        </RowView>
+
                     </View>
 
                     <View style={globalReviews.part}>
@@ -805,20 +849,16 @@ export default function WEBSCRAP() {
                             Site Météo
                         </Text>
 
-                        <Text
-                            style={globalReviews.linkedText}
-                            onPress={() => {
-                                Linking.openURL('https://stackoverflow.com/questions/34771462/react-native-touchable-highlight-open-link-on-press');
-                            }}>
-                                Click me
-                            </Text>
-
                         <RowView>
-                            <Puce />
-                            <NewText>
-                                A developper
-                            </NewText>
-                        </RowView> 
+                            <LinkedSymb />
+                            <Text
+                                style={globalReviews.linkedText}
+                                onPress={() => {
+                                    Linking.openURL('https://github.com/Kartodix/WEBSCRAPINGPY/tree/master/S5%20CHALLENGE%201%20METEO');
+                            }}>
+                            Voir le repository</Text>
+                        </RowView>
+
                     </View>
 
                     <View style={globalReviews.part}>
@@ -830,11 +870,15 @@ export default function WEBSCRAP() {
                         </Text>
 
                         <RowView>
-                            <Puce />
-                            <NewText>
-                                A developper
-                            </NewText>
-                        </RowView> 
+                            <LinkedSymb />
+                            <Text
+                                style={globalReviews.linkedText}
+                                onPress={() => {
+                                    Linking.openURL('https://github.com/Kartodix/WEBSCRAPINGPY/tree/master/S6%20CHALLENGE%202%20FILMS');
+                            }}>
+                            Voir le repository</Text>
+                        </RowView>
+
                     </View>
                 </View>
             </View>
