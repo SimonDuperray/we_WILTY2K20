@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, ScrollView  } from 'react-native';
 import { globalReviews } from '../styles/globalReview';
+import { NeuButton } from 'react-native-neu-element';
 
 export default function GIT() {
     return (

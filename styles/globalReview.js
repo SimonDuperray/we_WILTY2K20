@@ -55,12 +55,12 @@ export const globalReviews = StyleSheet.create({
         marginBottom: 10,
     },
     summary: {
-        borderWidth: 1,
         padding: 20,
         paddingBottom: 10,
         paddingTop: 10,
         marginBottom: 15,
-        backgroundColor: '#5D6D7E'
+        backgroundColor: '#5D6D7E',
+        borderRadius: 10,
     },
     titleSummary: {
         textAlign: 'center',

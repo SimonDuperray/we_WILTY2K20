@@ -17,7 +17,7 @@ const screens = {
 const WEBSCRAPStack = createStackNavigator(screens, {
     defaultNavigationOptions: {
         headerTintColor: '#444',
-        headerStyle: { backgroundColor: '#ABB2B9' }
+        headerStyle: { backgroundColor: '#fff' }
     }
 });
 
