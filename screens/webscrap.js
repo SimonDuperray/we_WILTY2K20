@@ -6,6 +6,7 @@ import { Puce } from '../components/puceList';
 import { NewText } from '../components/newText';
 import { RowView } from '../components/rowView';
 import { LinkedSymb } from '../components/linkedText';
+import { Toggler } from '../components/toggler';
 
 export default function WEBSCRAP() {
     return (
@@ -41,23 +42,9 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                import requests
-                            </Text>
-                            <Text style={globalReviews.description}>
-                                Chargement de la librairie requests
-                            </Text>
-                        </View>
+                        <Toggler command={'import requests'} description={'Chargement de la librairie requests'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                response = requests.get('url')
-                            </Text>
-                            <Text style={globalReviews.description}>
-                                Requête GET pour obtenir des informations depuis l'API. On ajoute après l'adresse de l'API un point d'accès (ou endpoint) qui donne accès à des informations.
-                            </Text>
-                        </View>
+                        <Toggler command={'response = requests.get(\'url\')'} description={'Requête GET pour obtenir des informations depuis l\'API. On ajoute après l\'adresse de l\'API un point d\'accès (ou endpoint) qui donne accès à des informations.'}/>
 
                     </View>
 
@@ -90,68 +77,19 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                200
-                            </Text>
-                            <Text style={globalReviews.description}>
-                                Tout va bien, le serveur retourne le résultat.
-                            </Text>
-                        </View>
+                        <Toggler command={'200'} description={'Tout va bien, le serveur retourne le résultat.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                201
-                            </Text>
-                            <Text style={globalReviews.description}>
-                                La requête POST s'est bien déroulée.
-                            </Text>
-                        </View>
+                        <Toggler command={'201'} description={'La requête POST s\'est bien déroulée.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                301
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Le serveur redirige vers un autre paramètre.
-                            </Text>
-                        </View>
+                        <Toggler command={'301'} description={'Le serveur redirige vers un autre paramètre.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                400
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Mauvaise requête (vérifier l'existence du chemin d'accès).
-                            </Text>
-                        </View>
+                        <Toggler command={'400'} description={'Mauvaise requête (vérifier l\'existence du chemin d\'accès).'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                401
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Le serveur pense que nous ne sommes pas authentifié.
-                            </Text>
-                        </View>
+                        <Toggler command={'401'} description={'Le serveur pense que nous ne sommes pas authentifié.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                403
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Nous ne sommes pas autorisé à accéder à l'API.
-                            </Text>
-                        </View>
+                        <Toggler command={'403'} description={'Nous ne sommes pas autorisé à accéder à l\'API.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                404
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Le serveur n'a pas trouvé la ressource (souvent lié au point d'accès).
-                            </Text>
-                        </View>
+                        <Toggler command={'404'} description={'Le serveur n\'a pas trouvé la ressource (souvent lié au point d\'accès).'}/>
 
                     </View>
 
@@ -177,23 +115,10 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                http://api.open-notify.org/iss-pass.json?lat=48.87&lon=2.33
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Passer les paramètres et leurs valeurs directement dans l'URL.
-                            </Text>
-                        </View>
+                        <Toggler command={'http://api.open-notify.org/iss-pass.json?lat=48.87&lon=2.33'} description={'Passer les paramètres et leurs valeurs directement dans l\'URL.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                response = requests.get("http://api.open-notify.org/iss-pass.json", params=parameters)
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Rentrer les paramètres et les valeurs dans un dictinonaire et donner le dictionnaire à l'attribut params de la méthode get.
-                            </Text>
-                        </View>
+                        <Toggler command={'response = requests.get("http://api.open-notify.org/iss-pass.json", params=parameters)'} description={'Rentrer les paramètres et les valeurs dans un dictinonaire et donner le dictionnaire à l\'attribut params de la méthode get.'}/>
+                    
                     </View>
 
                     <View style={globalReviews.part}>
@@ -211,32 +136,12 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                import json
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Chargement de la librairie JSON.
-                            </Text>
-                        </View>
+                        <Toggler command={'import json'} description={'Chargement de la librairie JSON.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                x = json.dumps(y)
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Prend en entrée un objet Python et retourne une chaine de caractères.
-                            </Text>
-                        </View>
+                        <Toggler command={'x = json.dumps(y)'} description={'Prend en entrée un objet Python et retourne une chaine de caractères.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                x = json.loads(y)
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Prend en entrée une chaine de caractères JSON et retourne un objet Python (listes, dictionnaires).
-                            </Text>
-                        </View>
+                        <Toggler command={'x = json.loads(y)'} description={'Prend en entrée une chaine de caractères JSON et retourne un objet Python (listes, dictionnaires).'}/>
+                    
                     </View>
 
                     <View style={globalReviews.part}>
@@ -254,14 +159,7 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                json_data = response.json()
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Obtenir un objet Python.
-                            </Text>
-                        </View>
+                        <Toggler command={'json_data = response.json()'} description={'Obtenir un objet Python.'}/>
 
                     </View>
 
@@ -287,15 +185,7 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                print(response.headers)
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Retourne un dictionnaire (important key: 'Content Type').
-                            </Text>
-
-                        </View>
+                        <Toggler command={'print(response.headers)'} description={'Retourne un dictionnaire (important key: \'Content Type\').'}/>
 
                     </View>
 
@@ -335,23 +225,9 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                headers={'{'}"Authorization": "token currentToken"{'}'}
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Création d'un dictionnaire contenant le token.
-                            </Text>
-                        </View>
+                        <Toggler command={"headers={\"Authorization\": \"token currentToken\"}"} description={'Création d\'un dictionnaire contenant le token.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                response = requests.get('http://api.github.com/users/Kartodix', headers=headers)
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Requête GET.
-                            </Text>
-                        </View>
+                        <Toggler command={"response = requests.get('http://api.github.com/users/Kartodix', headers=headers)"} description={'Requête GET.'}/>
 
                     </View>
 
@@ -377,14 +253,7 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                requests.get('https://api.github.com/orgs/facebook', headers=headers)
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Connexion à une organisation.
-                            </Text>
-                        </View>
+                        <Toggler command={"requests.get('https://api.github.com/orgs/facebook', headers=headers)"} description={'Connexion à une organisation.'}/>
 
                     </View>
 
@@ -403,14 +272,7 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                params={'{'}"per_pages": 50, "page": 1{'}'}
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Paramétrer la pagination. Attention: Certaines APIs peuvent limiter la valeur de per_pages.
-                            </Text>
-                        </View>
+                        <Toggler command={"params={\"per_pages\": 50, \"page\": 1"} description={'Paramétrer la pagination. Attention: Certaines APIs peuvent limiter la valeur de per_pages.'}/>
 
                     </View>
 
@@ -422,14 +284,7 @@ export default function WEBSCRAP() {
                             Point d'accès User-Level
                         </Text>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                requests.get('https://api.github.com/user', headers=headers)
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Obtenir des informations sur l'utilisateur connecté.
-                            </Text>
-                        </View>
+                        <Toggler command={"requests.get('https://api.github.com/user', headers=headers)"} description={'Obtenir des informations sur l\'utilisateur connecté.'}/>
 
                     </View>
 
@@ -455,23 +310,9 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                payload={'{'}"name": "new-repo"{'}'}
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Création d'un dictionnaire avec le nom du nouveau repository.
-                            </Text>
-                        </View>
+                        <Toggler command={"payload={\"name\": \"new-repo\"}"} description={'Création d\'un dictionnaire avec le nom du nouveau repository.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                requests.get('https://api.github.com/user/repos', json=payload, headers=headers)
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Création du nouveau repository.
-                            </Text>
-                        </View>
+                        <Toggler command={"requests.get('https://api.github.com/user/repos', json=payload, headers=headers)"} description={'Création du nouveau repository.'}/>
 
                         <RowView>
                             <Puce />
@@ -511,23 +352,9 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                payload={'{'}"name": "new-repo", "description": "super formation"{'}'}
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Ajout de l'attribut "description".
-                            </Text>
-                        </View>
+                        <Toggler command={"payload={\"name\": \"new-repo\", \"description\": \"super formation\""} description={'Ajout de l\'attribut "description".'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                requests.get('https://api.github.com/repos/Kartodix/new-repo', json=payload, headers=headers)
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Création du nouveau repository.
-                            </Text>
-                        </View>
+                        <Toggler command={"requests.get('https://api.github.com/repos/Kartodix/new-repo', json=payload, headers=headers)"} description={'Création du nouveau repository.'}/>
 
                     </View>
 
@@ -546,14 +373,7 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                requests.delete('https://api.github.com/repos/Kartodix/new-repo', headers=headers)
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Suppression du nouveau repository.
-                            </Text>
-                        </View>
+                        <Toggler command={"requests.delete('https://api.github.com/repos/Kartodix/new-repo', headers=headers)"} description={'Suppression du nouveau repository.'}/>
 
                     </View>
 
@@ -586,23 +406,9 @@ export default function WEBSCRAP() {
                             Introduction au Web Scraping
                         </Text>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                response = requests.get(url)
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Récupération de l'url du site à scraper.
-                            </Text>
-                        </View>
+                        <Toggler command={"response = requests.get(url)"} description={'Récupération de l\'url du site à scraper.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                content = response.content
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Récupération du contenu du site (code HTML).
-                            </Text>
-                        </View>
+                        <Toggler command={"content = response.content"} description={'Récupération du contenu du site (code HTML).'}/>
 
                     </View>
 
@@ -614,59 +420,17 @@ export default function WEBSCRAP() {
                             Récupérer des éléments d'une page
                         </Text>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                from bs4 import BeautifulSoup
-                            </Text>
-                            <Text style={globalReviews.description}>
-                                Chargement de la librairie.
-                            </Text>
-                        </View>
+                        <Toggler command={"from bs4 import BeautifulSoup"} description={'Chargement de la librairie.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                content = response.content
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Récupération du contenu du site (code HTML).
-                            </Text>
-                        </View>
+                        <Toggler command={"content = response.content"} description={'Récupération du contenu du site (code HTML).'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                parser = BeautifulSoup(content, 'hml.parser')
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               On applique BeautifulSoup pour analyser le contenu précédemment téléchargé.
-                            </Text>
-                        </View>
+                        <Toggler command={"parser = BeautifulSoup(content, 'hml.parser')"} description={'On applique BeautifulSoup pour analyser le contenu précédemment téléchargé.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                body = parser.body
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Obtenir le tag body du document HTML.
-                            </Text>
-                        </View>
+                        <Toggler command={"body = parser.body"} description={'Obtenir le tag body du document HTML.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                p = body.p
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Obtenir le tag p du body.
-                            </Text>
-                        </View>
+                        <Toggler command={"p = body.p"} description={'Obtenir le tag p du body.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                p.text
-                            </Text>
-                            <Text style={globalReviews.description}>
-                               Afficher le tag p sans les balises.
-                            </Text>
-                        </View>
+                        <Toggler command={"p.text"} description={'Afficher le tag p sans les balises.'}/>
 
                     </View>
 
@@ -685,23 +449,9 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                p = body[0].find_all("p")
-                            </Text>
-                            <Text style={globalReviews.description}>
-                                Récupération des éléments de la balise p dans la liste body.
-                            </Text>
-                        </View>
+                        <Toggler command={"p = body[0].find_all(\"p\")"} description={'Récupération des éléments de la balise p dans la liste body.'}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                print(p[0].text)
-                            </Text>
-                            <Text style={globalReviews.description}>
-                                Obtenir le texte.
-                            </Text>
-                        </View>
+                        <Toggler command={"print(p[0].text)"} description={'Obtenir le texte.'}/>
 
                     </View>
 
@@ -713,14 +463,7 @@ export default function WEBSCRAP() {
                             Élements correspondant aux IDs
                         </Text>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                first_p = parser.find_all("p", id="first")[0]
-                            </Text>
-                            <Text style={globalReviews.description}>
-                                Récupération de l'ID souhaité.
-                            </Text>
-                        </View>
+                        <Toggler command={"first_p = parser.find_all(\"p\", id=\"first\")[0]"} description={'Récupération de l\'ID souhaité.'}/>
 
                     </View>
 
@@ -732,14 +475,7 @@ export default function WEBSCRAP() {
                             Les classes
                         </Text>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                first_class_p = parser.find_all("p", class_="class1")[0]
-                            </Text>
-                            <Text style={globalReviews.description}>
-                                Récupération de l'ID souhaité.
-                            </Text>
-                        </View>
+                        <Toggler command={"first_class_p = parser.find_all(\"p\", class_=\"class1\")[0]"} description={'Récupération de la classe souhaitée.'}/>
 
                     </View>
 
@@ -751,14 +487,7 @@ export default function WEBSCRAP() {
                             Sélecteurs CSS
                         </Text>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                first_items = parser.select(".first-item")
-                            </Text>
-                            <Text style={globalReviews.description}>
-                                Récupération de tous les éléments ayant la classe first-item.
-                            </Text>
-                        </View>
+                        <Toggler command={"first_items = parser.select(\".first-item\")"} description={'Récupération de tous les éléments ayant la classe first-item.'}/>
 
                     </View>
 
@@ -777,26 +506,11 @@ export default function WEBSCRAP() {
                             </NewText>
                         </RowView>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                offences = parser.select('#fautes')[0]
-                            </Text>
-                        </View>
+                        <Toggler command={"offences = parser.select('#fautes')[0]"}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                chelsea_offences = offences.select("td")[1]
-                            </Text>
-                        </View>
+                        <Toggler command={"chelsea_offences = offences.select(\"td\")[1]"}/>
 
-                        <View style={globalReviews.newCommand}>
-                            <Text style={globalReviews.command}>
-                                chelsea_offences_count = chelsea_offences.text
-                            </Text>
-                            <Text style={globalReviews.description}>
-                                Trouver le nombre de fautes de Chelsea.
-                            </Text>
-                        </View>
+                        <Toggler command={"chelsea_offences_count = chelsea_offences.text"} description={"Trouver le nombre de fautes de Chelsea."}/>
 
                     </View>
 
