@@ -1,15 +1,33 @@
-import React from 'react';
-import { View, Text, ScrollView  } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, ScrollView } from 'react-native';
 import { globalReviews } from '../styles/globalReview';
-import { NeuButton } from 'react-native-neu-element';
+
+import { NewSwitch } from '../components/switch';
 
 export default function GIT() {
+
+    const [test, setTest] = useState(true)
+
     return (
         <ScrollView>
 
             <View style={globalReviews.container}>
 
+                <Text
+                    onPress={() => {
+                        setTest(!test);
+                    }}
+                >
+                    Click me
+                </Text>
+
+                <View style={globalReviews.newCommand}>
+                    {test==true && (<Text>showed</Text>)}
+                    {test==false && (<Text>Hidden</Text>)}
+                </View>
+
                 <View style={globalReviews.summary}>
+
                     <Text style={globalReviews.titleSummary}>
                         Sommaire:
                     </Text>
@@ -25,8 +43,9 @@ export default function GIT() {
                     <Text style={globalReviews.firstStage}>
                         4. Push on GitHub
                     </Text>
+
                 </View>
-                
+
                 <View style={globalReviews.commandContainer}>
                     <Text style={globalReviews.titleText}>
                         Commandes Git

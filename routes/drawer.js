@@ -68,7 +68,7 @@ const DrawerNavigatorConfig = {
         itemsContainerStyle: {
             marginVertical: 0,
             padding: 20,
-            marginTop: 50
+            marginTop: 20,
         },
         itemStyle: {
             marginTop: 10,

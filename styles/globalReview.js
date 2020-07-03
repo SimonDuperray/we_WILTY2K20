@@ -4,12 +4,18 @@ export const globalReviews = StyleSheet.create({
     titleText: {
         fontFamily: 'nunito-regular',
         fontSize: 18,
-        color: '#333',
+        color: '#fff',
         textAlign: 'center',
-        borderColor: 'grey',
-        borderWidth: 3,
+        borderRadius: 5,
         paddingTop: 10,
         paddingBottom: 10,
+        backgroundColor: '#EC7063',
+        letterSpacing: 2,
+        borderColor: '#E74C3C',
+        borderWidth: 2,
+        marginBottom: 10,
+        fontWeight: 'bold',
+
     },
     container: {
         flex: 1,
@@ -21,16 +27,19 @@ export const globalReviews = StyleSheet.create({
     },
     newCommand: {
         paddingBottom: 20,
-        borderBottomWidth: 1.5,
-        borderBottomColor: 'grey',
         paddingBottom: 10,
+        paddingLeft: 10,
+        paddingRight: 10,
+        borderRadius: 8,
         paddingTop: 10,
-        marginBottom: 10
+        marginBottom: 10,
+        backgroundColor: '#F1C40F',
     },
     command: {
         fontWeight: 'bold',
         marginRight: 15,
         textDecorationLine: 'underline',
+        color: "#fff",
     },
     description: {
         color: 'grey',
@@ -59,14 +68,19 @@ export const globalReviews = StyleSheet.create({
         paddingBottom: 10,
         paddingTop: 10,
         marginBottom: 15,
-        backgroundColor: '#5D6D7E',
+        backgroundColor: '#E59866',
         borderRadius: 10,
+        borderColor: '#DC7633',
+        borderWidth: 3,
     },
     titleSummary: {
         textAlign: 'center',
         marginBottom: 10,
-        fontSize: 15,
-        textDecorationLine: 'underline',
+        marginTop: 10,
+        fontSize: 16,
+        color: "#fff",
+        textTransform: "uppercase",
+        fontFamily: "roboto-bold"
     },
     summaryItem: {
         marginBottom: 10,
@@ -74,11 +88,15 @@ export const globalReviews = StyleSheet.create({
     firstStage: {
         marginBottom: 5,
         paddingLeft: 0,
-        fontWeight: 'bold',
         fontSize: 14,
-        marginBottom: 10,
+        color: "#fff",
+        flexWrap: 'wrap',
+        marginBottom: 5,
+        fontFamily: "roboto-bold"
     },
     secondStage: {
-        paddingLeft: 10
+        paddingLeft: 15,
+        color: "#fff",
+        marginBottom: 5,
     }
 })
