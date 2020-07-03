@@ -1,9 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text, Dimensions } from 'react-native';
 import { NeuView } from 'react-native-neu-element';
-import { globalStyles } from '../styles/global';
-import ProgressBar from 'react-native-animated-progress';
-
+import { Icon } from 'react-native-elements';
 
 const WIDTH = Dimensions.get('screen').width;
 const HEIGHT = Dimensions.get('screen').height;
@@ -19,10 +17,6 @@ export default function Home() {
                 Bienvenue Simon !
             </Text>
 
-            <View style={styles.progressBar}>
-                <ProgressBar height={10} indeterminate backgroundColor="#F5B7B1"/>
-            </View>
-
             <View style={styles.recoContainer}>
                 <Text style={styles.recommandations}>
                     Recommandations
@@ -34,10 +28,10 @@ export default function Home() {
                 <View style={styles.firstCol}>
 
                     <Text style={styles.topLeft}>
-                        number1
+                        Custom Drawer
                     </Text>
                     <Text style={styles.botLeft}>
-                        number2
+                        Arrange articles design
                     </Text>
 
                 </View>
@@ -45,10 +39,10 @@ export default function Home() {
                 <View style={styles.secondCol}>
 
                     <Text style={styles.topRight}>
-                        number3
+                        Add more screens
                     </Text>
                     <Text style={styles.botRight}>
-                        number4
+                        Add Bezier Curves
                     </Text>
 
                 </View>
@@ -93,7 +87,7 @@ const styles = StyleSheet.create({
         marginRight: 50,
         width: 'auto',
         paddingLeft: 10,
-        marginTop: 30
+        marginTop: 25
     },
     firstCol: {
         marginRight: 10,
@@ -108,13 +102,13 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         marginBottom: 8,
         textAlign: 'center',
-        paddingTop: 10,
         color: "#fff",
         fontFamily: 'roboto-bold',
         fontSize: 17,
         shadowColor: "#000",
         shadowOffset: {width: 1,height: 12},
         elevation: 10,
+        textAlignVertical: 'center'
     },
     botLeft: {
         width: 150,
@@ -123,13 +117,13 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         marginTop: 8,
         textAlign: 'center',
-        paddingTop: 10,
         color: "#fff",
         fontFamily: 'roboto-bold',
         fontSize: 17,
         shadowColor: "#000",
         shadowOffset: {width: 1,height: 12},
         elevation: 10,
+        textAlignVertical: 'center'
     },
     topRight: {
         width: 150,
@@ -138,13 +132,13 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         marginBottom: 8,
         textAlign: 'center',
-        paddingTop: 10,
         color: "#fff",
         fontFamily: 'roboto-bold',
         fontSize: 17,
         shadowColor: "#000",
         shadowOffset: {width: 1,height: 12},
         elevation: 10,
+        textAlignVertical: 'center'
     },
     botRight: {
         width: 150,
@@ -153,13 +147,13 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         marginTop: 8,
         textAlign: 'center',
-        paddingTop: 10,
         color: "#fff",
         fontFamily: 'roboto-bold',
         fontSize: 17,
         shadowColor: "#000",
         shadowOffset: {width: 1,height: 12},
         elevation: 10,
+        textAlignVertical: 'center'
     },
     recoContainer: {
         marginBottom: -30,
@@ -176,9 +170,5 @@ const styles = StyleSheet.create({
         shadowColor: "#000",
         shadowOffset: {width: 1,height: 12},
         elevation: 30,
-    },
-    progressBar: {
-        marginTop: 10,
-        marginBottom: -10
     },
 })

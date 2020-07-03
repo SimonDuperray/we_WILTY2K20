@@ -1,11 +1,11 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import DEVWEB from '../screens/devweb';
+import HTML from '../screens/html';
 import Header from '../shared/header';
 import React from 'react';
 
 const screens = {
-    DEVWEB: {
-        screen: DEVWEB,
+    HTML: {
+        screen: HTML,
         navigationOptions: ({ navigation }) => {
             return {
                 headerTitle: () => <Header navigation={navigation}/>,
@@ -14,11 +14,11 @@ const screens = {
     }
 }
 
-const DEVWEBStack = createStackNavigator(screens, {
+const HTMLStack = createStackNavigator(screens, {
     defaultNavigationOptions: {
         headerTintColor: '#444',
         headerStyle: { backgroundColor: '#fff' }
     }
 });
 
-export default DEVWEBStack;
+export default HTMLStack;
