@@ -27,10 +27,20 @@ export default function Home() {
 
                 <View style={styles.firstCol}>
 
-                    <Text style={styles.topLeft}>
+                    <Text 
+                        style={styles.topLeft}
+                        onPress={() => {
+                            alert('custom drawer');
+                        }}
+                    >
                         Custom Drawer
                     </Text>
-                    <Text style={styles.botLeft}>
+                    <Text 
+                        style={styles.botLeft}
+                        onPress={() => {
+                            alert('arrange article design');
+                        }}
+                    >
                         Arrange articles design
                     </Text>
 
@@ -38,10 +48,20 @@ export default function Home() {
 
                 <View style={styles.secondCol}>
 
-                    <Text style={styles.topRight}>
+                    <Text 
+                        style={styles.topRight}
+                        onPress={() => {
+                            alert("add screens");
+                        }}
+                    >
                         Add more screens
                     </Text>
-                    <Text style={styles.botRight}>
+                    <Text 
+                        style={styles.botRight}
+                        onPress={() => {
+                            alert('add bezier curves');
+                        }}
+                    >
                         Add Bezier Curves
                     </Text>
 

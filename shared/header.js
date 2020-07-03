@@ -30,9 +30,10 @@ const styles = StyleSheet.create({
     headerText: {
         fontWeight: 'bold',
         fontSize: 20,
-        color: 'grey',
+        color: '#EC7063',
         letterSpacing: 15,
-        textTransform: 'uppercase'
+        textTransform: 'uppercase',
+        fontFamily: 'roboto-bold'
     },
     icon: {
         position: 'absolute',
