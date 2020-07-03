@@ -1,55 +1,75 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import { NeuSpinner, NeuButton, NeuView, NeuSwitch, NeuBorderView } from 'react-native-neu-element';
-import { LinearGradient } from 'expo';
-
+import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import { NeuView } from 'react-native-neu-element';
 import { globalStyles } from '../styles/global';
+import ProgressBar from 'react-native-animated-progress';
+
+
+const WIDTH = Dimensions.get('screen').width;
+const HEIGHT = Dimensions.get('screen').height;
 
 export default function Home() {
     return (
-        <View style={globalStyles.container}>
+        <View style={styles.container}>
+
             <Text style={styles.newWelcomeOnWilty} onPress={() => {
-                alert('hello');
-            }}>Bienvenue Simon !</Text>
+                alert(HEIGHT);
+                }}
+            >
+                Bienvenue Simon !
+            </Text>
+
+            <View style={styles.progressBar}>
+                <ProgressBar height={10} indeterminate backgroundColor="#F5B7B1"/>
+            </View>
+
+            <View style={styles.recoContainer}>
+                <Text style={styles.recommandations}>
+                    Recommandations
+                </Text>
+            </View>
 
             <View style={styles.boxesContainer}>
-                {/* <View style={styles.firstRow}>
-                    <NeuView color="#F5B041" height={80} width={145} borderRadius={16} style={{marginRight: 15}}
-                        inset
-                    >
-                        <Text style={{color:'#fff', fontFamily:'roboto-bold', fontSize:20}}>number1</Text>
-                    </NeuView>
-                    <NeuView color="#F5B041" height={80} width={145} borderRadius={16} style={{marginLeft: 5}}
-                        inset
-                    >
-                        <Text style={{color:'#fff', fontFamily:'roboto-bold', fontSize:20}}>number2</Text>
-                    </NeuView>
-                </View>
-                <View style={styles.secondRow}>
-                    <NeuView color='#5DADE2' height={100} width={310} borderRadius={16} style={{marginTop: 30}}
-                        inset
-                    >
-                        <Text style={{color:'#fff', fontFamily:'roboto-bold', fontSize:20}}>number 3</Text>
-                    </NeuView>
-                </View> */}
 
-                <View style={styles.firstRow}>
-                    <Text style={styles.secondChoice1}>number1</Text>
-                    <Text style={styles.secondChoice2}>number2</Text>
-                </View>
-                <View style={styles.secondChoiceRow}>
-                    <Text style={styles.test}>number3</Text>
+                <View style={styles.firstCol}>
+
+                    <Text style={styles.topLeft}>
+                        number1
+                    </Text>
+                    <Text style={styles.botLeft}>
+                        number2
+                    </Text>
+
                 </View>
 
-                <NeuView color='#eef2f9' height={50} width={200} borderRadius={16} style={{}}>
-                <Text>{'\u00A9'} SimonDuperray</Text>
+                <View style={styles.secondCol}>
+
+                    <Text style={styles.topRight}>
+                        number3
+                    </Text>
+                    <Text style={styles.botRight}>
+                        number4
+                    </Text>
+
+                </View>
+
+            </View>
+
+            <View style={styles.copyright}>
+                <NeuView color='#eef2f9' height={50} width={200} borderRadius={16}>
+                    <Text>{'\u00A9'} SimonDuperray</Text>
                 </NeuView>
             </View>
+
         </View>
     )
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 20,
+    },
     newWelcomeOnWilty: {
         backgroundColor: "#EC7063",
         textAlign: 'center',
@@ -64,67 +84,101 @@ const styles = StyleSheet.create({
         elevation: 10,
     },
     boxesContainer: {
-        marginTop: 70,
+        marginTop: 50,
         flexWrap: 'wrap',
-    },
-    firstRow: {
-        flexWrap: 'wrap',
-        height: 80,
-    },
-    secondChoice1: {
-        backgroundColor: '#F5B041',
-        height: 80,
-        width: 145,
-        borderRadius: 16,
-        textAlign: 'center', 
-        marginRight: 15,
-        color: "#fff",
-        fontFamily: 'roboto-bold',
-        fontSize: 20,
-        textAlignVertical: 'center',
-        shadowColor: "#000",
-        shadowOffset: {width: 1,height: 12},
-        elevation: 30,
-    },
-    secondChoice2: {
-        backgroundColor: '#F5B041',
-        height: 80,
-        width: 145,
-        borderRadius: 16,
-        textAlign: 'center', 
-        marginLeft: 10,
-        color: "#fff",
-        fontFamily: 'roboto-bold',
-        fontSize: 20,
-        textAlignVertical: 'center',
-        shadowColor: "#000",
-        shadowOffset: {width: 1,height: 12},
-        elevation: 30,
-    },
-    secondChoiceRow: {
-        backgroundColor: '#5DADE2',
-        height: 95,
-        borderRadius: 16,
-        marginTop: 15,
-        shadowColor: "#000",
-        shadowOffset: {width: 1,height: 12},
-        elevation: 54,
-    },
-    test: {
-        textAlign: 'center',
-        color: "#fff",
-        fontFamily: 'roboto-bold',
-        fontSize: 23,
-        textAlignVertical: 'center',
-        top: 20
+        flexDirection: 'row',
     },
     copyright: {
-        marginTop: 200,
-        marginLeft: 80,
+        marginLeft: 50,
         marginRight: 50,
         width: 'auto',
+        paddingLeft: 10,
+        marginTop: 30
+    },
+    firstCol: {
+        marginRight: 10,
+    },
+    secondCol: {
+        marginLeft: 8,
+    },
+    topLeft: {
+        width: 150,
+        height: 130,
+        backgroundColor: '#F1948A',
+        borderRadius: 10,
+        marginBottom: 8,
         textAlign: 'center',
-        borderWidth: 1
-    }
+        paddingTop: 10,
+        color: "#fff",
+        fontFamily: 'roboto-bold',
+        fontSize: 17,
+        shadowColor: "#000",
+        shadowOffset: {width: 1,height: 12},
+        elevation: 10,
+    },
+    botLeft: {
+        width: 150,
+        height: 200,
+        backgroundColor: '#E59866',
+        borderRadius: 10,
+        marginTop: 8,
+        textAlign: 'center',
+        paddingTop: 10,
+        color: "#fff",
+        fontFamily: 'roboto-bold',
+        fontSize: 17,
+        shadowColor: "#000",
+        shadowOffset: {width: 1,height: 12},
+        elevation: 10,
+    },
+    topRight: {
+        width: 150,
+        height: 200,
+        backgroundColor: '#EB984E',
+        borderRadius: 10,
+        marginBottom: 8,
+        textAlign: 'center',
+        paddingTop: 10,
+        color: "#fff",
+        fontFamily: 'roboto-bold',
+        fontSize: 17,
+        shadowColor: "#000",
+        shadowOffset: {width: 1,height: 12},
+        elevation: 10,
+    },
+    botRight: {
+        width: 150,
+        height: 130,
+        backgroundColor: '#F1C40F',
+        borderRadius: 10,
+        marginTop: 8,
+        textAlign: 'center',
+        paddingTop: 10,
+        color: "#fff",
+        fontFamily: 'roboto-bold',
+        fontSize: 17,
+        shadowColor: "#000",
+        shadowOffset: {width: 1,height: 12},
+        elevation: 10,
+    },
+    recoContainer: {
+        marginBottom: -30,
+        marginTop: 30
+    },
+    recommandations: {
+        color: "#fff",
+        backgroundColor: '#F0B27A',
+        borderRadius: 5,
+        padding: 10,
+        textAlign: 'center',
+        fontFamily: "roboto-bold",
+        fontSize: 20,
+        shadowColor: "#000",
+        shadowOffset: {width: 1,height: 12},
+        elevation: 30,
+    },
+    progressBar: {
+        marginTop: 10,
+        marginBottom: -10
+    },
 })
-
