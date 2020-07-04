@@ -12,7 +12,10 @@ import { RowViewLink } from '../components/rowViewLink';
 export default function WEBSCRAP() {
     return (
         <ScrollView>
+
             <View style={globalStyles.container}>
+
+            {/* ===SOMMAIRE=== */}
 
             <View style={globalReviews.summary}>
 
@@ -106,17 +109,19 @@ export default function WEBSCRAP() {
                     </Text>
 
             </View>
+
+            {/* ===FIN SOMMAIRE=== */}
                 
-                {/* CHAPITRE API's SCRAPING */}
+            {/* CHAPITRE API's SCRAPING */}
 
                 <View style={globalReviews.chapitre}>
                     <Text style={globalReviews.titleText}>
                         API's Scraping
                     </Text>
 
-                    <View style={globalReviews.part}>
+                    {/* INTRODUCTION API ET REQUETE GET */}
 
-                        {/* INTRODUCTION API ET REQUETE GET */}
+                    <View style={globalReviews.part}>
 
                         <Text style={globalReviews.partTitle}>
                             Introduction API et Requête GET
@@ -142,9 +147,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
-                    <View style={globalReviews.part}>
+                    {/* CODES STATUS */}
 
-                        {/* CODES STATUS */}
+                    <View style={globalReviews.part}>
 
                         <Text style={globalReviews.partTitle}>
                             Les Codes Status
@@ -187,9 +192,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
+                    {/* PARAMETRES DE REQUETE */}
+                    
                     <View style={globalReviews.part}>
-
-                        {/* PARAMETRES DE REQUETE */}
 
                         <Text style={globalReviews.partTitle}>
                             Les Paramètres de Requête
@@ -215,9 +220,9 @@ export default function WEBSCRAP() {
                     
                     </View>
 
-                    <View style={globalReviews.part}>
+                    {/* PARAMETRES DE REQUETE */}
 
-                        {/* PARAMETRES DE REQUETE */}
+                    <View style={globalReviews.part}>
 
                         <Text style={globalReviews.partTitle}>
                             Format JSON
@@ -238,9 +243,9 @@ export default function WEBSCRAP() {
                     
                     </View>
 
+                    {/* Obtenir un JSON depuis une requête */}
+                    
                     <View style={globalReviews.part}>
-
-                        {/* Obtenir un JSON depuis une requête */}
 
                         <Text style={globalReviews.partTitle}>
                             Obtenir un JSON depuis une requête 
@@ -257,9 +262,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
-                    <View style={globalReviews.part}>
+                    {/* Types de contenu */}
 
-                        {/* Types de contenu */}
+                    <View style={globalReviews.part}>
 
                         <Text style={globalReviews.partTitle}>
                             Types de contenu
@@ -304,9 +309,9 @@ export default function WEBSCRAP() {
                         Authentification à une API
                     </Text>
 
-                    <View style={globalReviews.part}>
+                    {/* Authentification à l'API de GitHub */}
 
-                        {/* Authentification à l'API de GitHub */}
+                    <View style={globalReviews.part}>
 
                         <Text style={globalReviews.partTitle}>
                             Authentification à l'API de GitHub
@@ -325,9 +330,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
-                    <View style={globalReviews.part}>
+                    {/* Points d'accès ou endpoints */}
 
-                        {/* Points d'accès ou endpoints */}
+                    <View style={globalReviews.part}>
 
                         <Text style={globalReviews.partTitle}>
                             Points d'accès ou endpoints
@@ -351,9 +356,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
+                    {/* Pagination */}
+                    
                     <View style={globalReviews.part}>
-
-                        {/* Pagination */}
 
                         <Text style={globalReviews.partTitle}>
                             Pagination
@@ -370,9 +375,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
+                    {/* Point d'accès User-Level */}
+                    
                     <View style={globalReviews.part}>
-
-                        {/* Point d'accès User-Level */}
 
                         <Text style={globalReviews.partTitle}>
                             Point d'accès User-Level
@@ -382,9 +387,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
-                    <View style={globalReviews.part}>
+                    {/* Requête POST */}
 
-                        {/* Requête POST */}
+                    <View style={globalReviews.part}>
 
                         <Text style={globalReviews.partTitle}>
                             Requête POST
@@ -417,9 +422,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
-                    <View style={globalReviews.part}>
+                    {/* Requête PATCH/PUT */}
 
-                        {/* Requête PATCH/PUT */}
+                    <View style={globalReviews.part}>
 
                         <Text style={globalReviews.partTitle}>
                             Requête PATCH / PUT
@@ -452,9 +457,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
-                    <View style={globalReviews.part}>
+                    {/* Requête DELETE */}
 
-                        {/* Requête DELETE */}
+                    <View style={globalReviews.part}>
 
                         <Text style={globalReviews.partTitle}>
                             Requête DELETE
@@ -492,9 +497,9 @@ export default function WEBSCRAP() {
                         Web Scraping
                     </Text>
 
-                    <View style={globalReviews.part}>
+                    {/* Introduction au Web Scraping */}
 
-                        {/* Introduction au Web Scraping */}
+                    <View style={globalReviews.part}>                      
 
                         <Text style={globalReviews.partTitle}>
                             Introduction au Web Scraping
@@ -506,9 +511,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
-                    <View style={globalReviews.part}>
+                    {/* Récupérer des éléments d'une page */}
 
-                        {/* Récupérer des éléments d'une page */}
+                    <View style={globalReviews.part}>
 
                         <Text style={globalReviews.partTitle}>
                             Récupérer des éléments d'une page
@@ -528,9 +533,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
+                    {/* Utiliser FindAll */}
+                    
                     <View style={globalReviews.part}>
-
-                        {/* Utiliser FindAll */}
 
                         <Text style={globalReviews.partTitle}>
                             Utiliser FindAll
@@ -549,9 +554,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
+                    {/* Élements correspondant aux IDs */}
+                    
                     <View style={globalReviews.part}>
-
-                        {/* Élements correspondant aux IDs */}
 
                         <Text style={globalReviews.partTitle}>
                             Élements correspondant aux IDs
@@ -561,9 +566,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
+                    {/* Les classes */}
+                    
                     <View style={globalReviews.part}>
-
-                        {/* Les classes */}
 
                         <Text style={globalReviews.partTitle}>
                             Les classes
@@ -573,9 +578,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
+                    {/* Selecteurs CSS */}
+                    
                     <View style={globalReviews.part}>
-
-                        {/* Selecteurs CSS */}
 
                         <Text style={globalReviews.partTitle}>
                             Sélecteurs CSS
@@ -585,9 +590,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
+                    {/* Association de sélecteurs en CSS */}
+                    
                     <View style={globalReviews.part}>
-
-                        {/* Association de sélecteurs en CSS */}
 
                         <Text style={globalReviews.partTitle}>
                             Association de sélecteurs en CSS
@@ -629,9 +634,9 @@ export default function WEBSCRAP() {
                         Projets Web Scraping
                     </Text>
 
+                    {/* Projet API Reddit */}
+                    
                     <View style={globalReviews.part}>
-
-                        {/* Projet API Reddit */}
 
                         <Text style={globalReviews.partTitle}>
                             Cas Pratique: API Reddit
@@ -649,9 +654,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
+                    {/* Projet Site Meteo */}
+                    
                     <View style={globalReviews.part}>
-
-                        {/* Projet Site Meteo */}
 
                         <Text style={globalReviews.partTitle}>
                             Site Météo
@@ -669,9 +674,9 @@ export default function WEBSCRAP() {
 
                     </View>
 
+                    {/* Critique de films */}
+                    
                     <View style={globalReviews.part}>
-
-                        {/* Critique de films */}
 
                         <Text style={globalReviews.partTitle}>
                             Critique de films
@@ -688,8 +693,11 @@ export default function WEBSCRAP() {
                         </RowViewLink>
 
                     </View>
+                
                 </View>
+            
             </View>
+        
         </ScrollView>
     )
 }

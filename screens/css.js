@@ -11,6 +11,8 @@ export default function CSS() {
 
             <View style={globalReviews.container}>
 
+                {/* ===SOMMAIRE=== */}
+
                 <View style={globalReviews.summary}>
 
                     <Text style={globalReviews.titleSummary}>
@@ -33,6 +35,10 @@ export default function CSS() {
                     </Text>
 
                 </View>
+
+                {/* ===FIN SOMMAIRE=== */}
+
+                {/* ===FLEX BOX=== */}
 
                 <View style={globalReviews.commandContainer}>
 
@@ -102,7 +108,10 @@ export default function CSS() {
 
                 </View>
 
+                {/* ===FIN FLEX BOX=== */}
+
             </View>
+
         </ScrollView>
     )
 }

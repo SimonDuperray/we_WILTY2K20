@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text, Dimensions } from 'react-native';
 import { NeuView } from 'react-native-neu-element';
-import { Icon } from 'react-native-elements';
 
 const WIDTH = Dimensions.get('screen').width;
 const HEIGHT = Dimensions.get('screen').height;
@@ -10,12 +9,18 @@ export default function Home() {
     return (
         <View style={styles.container}>
 
+            {/* ===WELCOME=== */}
+
             <Text style={styles.newWelcomeOnWilty} onPress={() => {
                 alert(HEIGHT);
                 }}
             >
                 Bienvenue Simon !
             </Text>
+
+            {/* ===FIN WELCOME=== */}
+
+            {/* ===MODIFICATIONS=== */}
 
             <View style={styles.recoContainer}>
                 <Text style={styles.recommandations}>
@@ -69,11 +74,17 @@ export default function Home() {
 
             </View>
 
+            {/* ===FIN RECOMMANDATIONS=== */}
+
+            {/* ===COPYRIGHT=== */}
+
             <View style={styles.copyright}>
                 <NeuView color='#eef2f9' height={50} width={200} borderRadius={16}>
                     <Text>{'\u00A9'} SimonDuperray</Text>
                 </NeuView>
             </View>
+
+            {/* ===FIN COPYRIGHT=== */}
 
         </View>
     )

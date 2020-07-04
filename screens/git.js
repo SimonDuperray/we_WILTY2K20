@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import { globalReviews } from '../styles/globalReview';
 import { Toggler } from '../components/toggler';
@@ -9,6 +9,8 @@ export default function GIT() {
         <ScrollView>
 
             <View style={globalReviews.container}>
+
+                {/* ===SOMMAIRE=== */}
 
                 <View style={globalReviews.summary}>
 
@@ -29,6 +31,10 @@ export default function GIT() {
                     </Text>
 
                 </View>
+
+                {/* ===FIN SOMMAIRE=== */}
+
+                {/* ===PARTIE GIT=== */}
 
                 <View style={globalReviews.commandContainer}>
 
@@ -61,6 +67,9 @@ export default function GIT() {
 
                 </View>
 
+                {/* ===FIN PARTIE GIT=== */}
+
+                {/* ===PARTIE BRANCH=== */}
 
                 <View style={globalReviews.commandContainer}>
 
@@ -82,6 +91,10 @@ export default function GIT() {
 
                 </View>
 
+                {/* ===FIN PARTIE BRANCH=== */}
+
+                {/* ===PARTIE REMISAGE=== */}
+
                 <View style={globalReviews.commandContainer}>
 
                     <Text style={globalReviews.titleText}>
@@ -95,6 +108,10 @@ export default function GIT() {
                     <Toggler command={'git stash apply '} description={'Appliquer les modifications stockées en mémoire.'}/>
 
                 </View>
+
+                {/* ===FIN PARTIE REMISAGE=== */}
+
+                {/* ===PARTIE PUSH=== */}
 
                 <View style={globalReviews.commandContainer}>
 
@@ -111,7 +128,11 @@ export default function GIT() {
                     <Toggler command={'git push origin master --force :'} description={'Si bug avec la commande précédente.'}/>
 
                 </View>
+
+                {/* ===FIN PARTIE PUSH=== */}
+
             </View>
+
         </ScrollView>
     )
 }
