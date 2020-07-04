@@ -7,11 +7,105 @@ import { NewText } from '../components/newText';
 import { RowView } from '../components/rowView';
 import { LinkedSymb } from '../components/linkedText';
 import { Toggler } from '../components/toggler';
+import { RowViewLink } from '../components/rowViewLink';
 
 export default function WEBSCRAP() {
     return (
         <ScrollView>
             <View style={globalStyles.container}>
+
+            <View style={globalReviews.summary}>
+
+                <Text style={globalReviews.titleSummary}>
+                    Sommaire:
+                </Text>
+
+                <Text style={globalReviews.firstStage}>
+                    1. API's Scraping
+                </Text>
+                    <Text style={globalReviews.secondStage}>
+                        1.1 Introduction
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        1.2 Codes Status
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        1.3 Paramètres de requête
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        1.4 Format JSON
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        1.5 Obtenir un JSON depuis une requête
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        1.6 Types de contenu
+                    </Text>
+
+                <Text style={globalReviews.firstStage}>
+                    2. Authentification à une API
+                </Text>
+                    <Text style={globalReviews.secondStage}>
+                        2.1 Authentification à l'API de GitHub
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        2.2 Points d'accès 
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        2.3 Pagination
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        2.4 Point d'accès User-Level
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        2.5 Requête POST
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        2.6 Requête PATCH/PUT
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        2.7 Requête DELETE
+                    </Text>
+
+                <Text style={globalReviews.firstStage}>
+                    3. Web Scraping
+                </Text>
+                    <Text style={globalReviews.secondStage}>
+                        3.1 Introduction au Web Scraping
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        3.2 Récupérer des éléments d'une page
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        3.3 Utiliser FindAll
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        3.4 IDs
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        3.5 Classes
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        3.6 Sélecteurs CSS
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        3.7 Association de sélecteurs CSS
+                    </Text>
+
+                <Text style={globalReviews.firstStage}>
+                    4. Projets Web Scraping
+                </Text>
+                    <Text style={globalReviews.secondStage}>
+                        4.1 API Reddit
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        4.2 Météo
+                    </Text>
+                    <Text style={globalReviews.secondStage}>
+                        4.3 Critique de films
+                    </Text>
+
+            </View>
                 
                 {/* CHAPITRE API's SCRAPING */}
 
@@ -189,7 +283,7 @@ export default function WEBSCRAP() {
 
                     </View>
 
-                    <RowView>
+                    <RowViewLink>
                             <LinkedSymb />
                             <Text
                                 style={globalReviews.linkedText}
@@ -197,9 +291,9 @@ export default function WEBSCRAP() {
                                     Linking.openURL('https://github.com/Kartodix/WEBSCRAPINGPY/tree/master/S1%20APIs%20Scrapping');
                                 }}
                             >
-                                Voir le repository.
+                                Voir le repository
                             </Text>
-                    </RowView>
+                    </RowViewLink>
                         
                 </View>
 
@@ -377,7 +471,7 @@ export default function WEBSCRAP() {
 
                     </View>
 
-                    <RowView>
+                    <RowViewLink>
                             <LinkedSymb />
                             <Text
                                 style={globalReviews.linkedText}
@@ -385,9 +479,9 @@ export default function WEBSCRAP() {
                                     Linking.openURL('https://github.com/Kartodix/WEBSCRAPINGPY/tree/master/S2%20AUTHENTIFICATION');
                                 }}
                             >
-                                Voir le repository.
+                                Voir le repository
                             </Text>
-                    </RowView>
+                    </RowViewLink>
 
                 </View>
 
@@ -514,7 +608,7 @@ export default function WEBSCRAP() {
 
                     </View>
 
-                    <RowView>
+                    <RowViewLink>
                             <LinkedSymb />
                             <Text
                                 style={globalReviews.linkedText}
@@ -522,9 +616,9 @@ export default function WEBSCRAP() {
                                     Linking.openURL('https://github.com/Kartodix/WEBSCRAPINGPY/tree/master/S4%20WEB%20SCRAPPING');
                                 }}
                             >
-                                Voir le repository.
+                                Voir le repository
                             </Text>
-                    </RowView>
+                    </RowViewLink>
 
                 </View>
 
@@ -543,7 +637,7 @@ export default function WEBSCRAP() {
                             Cas Pratique: API Reddit
                         </Text>
 
-                        <RowView>
+                        <RowViewLink>
                             <LinkedSymb />
                             <Text
                                 style={globalReviews.linkedText}
@@ -551,7 +645,7 @@ export default function WEBSCRAP() {
                                     Linking.openURL('https://github.com/Kartodix/WEBSCRAPINGPY/tree/master/S3%20CAS%20PRATIQUE%20REDDIT');
                             }}>
                             Voir le repository</Text>
-                        </RowView>
+                        </RowViewLink>
 
                     </View>
 
@@ -563,7 +657,7 @@ export default function WEBSCRAP() {
                             Site Météo
                         </Text>
 
-                        <RowView>
+                        <RowViewLink>
                             <LinkedSymb />
                             <Text
                                 style={globalReviews.linkedText}
@@ -571,7 +665,7 @@ export default function WEBSCRAP() {
                                     Linking.openURL('https://github.com/Kartodix/WEBSCRAPINGPY/tree/master/S5%20CHALLENGE%201%20METEO');
                             }}>
                             Voir le repository</Text>
-                        </RowView>
+                        </RowViewLink>
 
                     </View>
 
@@ -583,7 +677,7 @@ export default function WEBSCRAP() {
                             Critique de films
                         </Text>
 
-                        <RowView>
+                        <RowViewLink>
                             <LinkedSymb />
                             <Text
                                 style={globalReviews.linkedText}
@@ -591,7 +685,7 @@ export default function WEBSCRAP() {
                                     Linking.openURL('https://github.com/Kartodix/WEBSCRAPINGPY/tree/master/S6%20CHALLENGE%202%20FILMS');
                             }}>
                             Voir le repository</Text>
-                        </RowView>
+                        </RowViewLink>
 
                     </View>
                 </View>

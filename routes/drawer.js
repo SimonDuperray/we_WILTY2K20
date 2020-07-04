@@ -12,7 +12,6 @@ import CSSStack from './cssStack';
 import JSVANILLAStack from './jsVanillaStack';
 import PHPStack from './phpStack';
 import SQLStack from './sqlStack';
-import SQL from '../screens/sql';
 
 const RouteConfigs = {
     Accueil: {

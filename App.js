@@ -10,7 +10,8 @@ const getFonts = () => Font.loadAsync({
     'source-sans-pro-regular': require('./assets/fonts/SourceSansPro-Regular.ttf'),
     'source-sans-pro-bold-italic': require('./assets/fonts/SourceSansPro-BoldItalic.ttf'),
     'museo-moderno-extrabold': require('./assets/fonts/MuseoModerno-ExtraBold.ttf'),
-    'roboto-bold': require('./assets/fonts/RobotoMono-Bold.ttf')
+    'roboto-bold': require('./assets/fonts/RobotoMono-Bold.ttf'),
+    'modak': require('./assets/fonts/Modak-Regular.ttf'),
   });
 
 export default function App() {

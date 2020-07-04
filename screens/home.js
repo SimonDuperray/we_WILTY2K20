@@ -19,7 +19,7 @@ export default function Home() {
 
             <View style={styles.recoContainer}>
                 <Text style={styles.recommandations}>
-                    Recommandations
+                    Modifications
                 </Text>
             </View>
 

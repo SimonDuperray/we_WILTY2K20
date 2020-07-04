@@ -4,7 +4,7 @@ import { Icon } from 'react-native-elements';
 
 const LinkedSymb = ({ children, style }) => {
     return (
-      <Icon name="explore" size={14} color='blue'/>
+      <Icon name="explore" size={14} color='#2C3E50'/>
     );
 }
 
