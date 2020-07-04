@@ -10,16 +10,16 @@ const RowViewLink = ({ children }) => {
 const styles = StyleSheet.create({
   view: {
     flexDirection: "row",
-    // justifyContent: 'flex-end',
     alignItems: 'center',
-    // backgroundColor: 'rgba(250, 215, 160, 1)',
     backgroundColor: 'rgba(249, 231, 159, 0.5)',
     paddingTop: 5,
     paddingBottom: 5,
     borderRadius: 5,
     paddingLeft: 13,
-    width: 170,
-    textAlign: 'center'
+    textAlign: 'center',
+    marginBottom: 7,
+    borderWidth: 1,
+    borderColor: '#eee',
   }
 })
 

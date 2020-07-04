@@ -2,6 +2,8 @@ import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import { globalReviews } from '../styles/globalReview';
 import { Toggler } from '../components/toggler';
+import { RowViewLink } from '../components/rowViewLink';
+import { LinkedSymb } from '../components/linkedText';
 
 export default function CSS() {
     return (
@@ -37,6 +39,18 @@ export default function CSS() {
                     <Text style={globalReviews.titleText}>
                         FlexBox
                     </Text>
+
+                    <RowViewLink>
+                            <LinkedSymb />
+                            <Text
+                                style={globalReviews.linkedText}
+                                onPress={() => {
+                                    Linking.openURL('https://yoksel.github.io/flex-cheatsheet/#section-declaring');
+                                }}
+                            >
+                                Cheat Sheet Flex
+                            </Text>
+                    </RowViewLink>
 
                     <View style={globalReviews.part}>
 

@@ -5,6 +5,7 @@ import { Puce } from '../components/puceList';
 import { NewText } from '../components/newText';
 import { RowView } from '../components/rowView';
 import { LinkedSymb } from '../components/linkedText';
+import { RowViewLink } from '../components/rowViewLink';
 
 export default function MLPY() {
     return (
@@ -90,17 +91,17 @@ export default function MLPY() {
                     <View style={globalReviews.part}>
                         <Text style={globalReviews.partTitle}>Fonction Coût - MSE</Text>
 
-                        <RowView>
+                        <RowViewLink>
                             <LinkedSymb />
-                            <Text 
+                            <Text
                                 style={globalReviews.linkedText}
                                 onPress={() => {
                                     Linking.openURL('https://fr.wikipedia.org/wiki/Erreur_quadratique_moyenne');
                                 }}
                             >
-                                Page Wikipédia
+                                MSE Wikipédia
                             </Text>
-                        </RowView>
+                        </RowViewLink>
 
                         <RowView>
                             <Puce />
@@ -133,17 +134,17 @@ export default function MLPY() {
                     <View style={globalReviews.part}>
                         <Text style={globalReviews.partTitle}>Méthode des Moindres Carrés</Text>
 
-                        <RowView>
+                        <RowViewLink>
                             <LinkedSymb />
-                            <Text 
+                            <Text
                                 style={globalReviews.linkedText}
                                 onPress={() => {
-                                    Linking.openURL('https://fr.wikipedia.org/wiki/M%C3%A9thode_des_moindres_carr%C3%A9s#:~:text=La%20m%C3%A9thode%20des%20moindres%20carr%C3%A9s%2C%20ind%C3%A9pendamment%20%C3%A9labor%C3%A9e%20par%20Legendre%20et,mod%C3%A8le%20peut%20prendre%20diverses%20formes.');
+                                    Linking.openURL('https://fr.wikipedia.org/wiki/M%C3%A9thode_des_moindres_carr%C3%A9s#:~:text=La%20m%C3%A9thode%20des%20moindres%20carr%C3%A9s%2C%20ind%C3%A9pendamment%20%C3%A9labor%C3%A9e%20par%20Legendre%20et,mod%C3%A8le%20peut%20prendre%20diverses%20formes');
                                 }}
                             >
-                                Page Wikipédia
+                                MMM Wikipédia
                             </Text>
-                        </RowView>
+                        </RowViewLink>
 
                         <Image source={require('../assets/mmc1.png')}/>
                         <Image source={require('../assets/mmc2.png')} />
@@ -175,17 +176,17 @@ export default function MLPY() {
                     <View style={globalReviews.part}>
                         <Text style={globalReviews.partTitle}>Descente de Gradient</Text>
 
-                        <RowView>
+                        <RowViewLink>
                             <LinkedSymb />
-                            <Text 
+                            <Text
                                 style={globalReviews.linkedText}
                                 onPress={() => {
                                     Linking.openURL('https://fr.wikipedia.org/wiki/Algorithme_du_gradient');
                                 }}
                             >
-                                Page Wikipédia
+                                Descente de Gradient Wikipédia
                             </Text>
-                        </RowView>
+                        </RowViewLink>
 
                         <RowView>
                             <Puce />
@@ -265,17 +266,17 @@ export default function MLPY() {
                     <View style={globalReviews.part}>
                         <Text style={globalReviews.partTitle}>Expression de forme fermée</Text>
 
-                        <RowView>
+                        <RowViewLink>
                             <LinkedSymb />
-                            <Text 
+                            <Text
                                 style={globalReviews.linkedText}
                                 onPress={() => {
                                     Linking.openURL('https://fr.wikipedia.org/wiki/Expression_de_forme_ferm%C3%A9e');
                                 }}
                             >
-                                Page Wikipédia
+                                Expression de forme fermée Wikipédia
                             </Text>
-                        </RowView>
+                        </RowViewLink>
 
                         <RowView>
                             <NewText>
@@ -290,17 +291,17 @@ export default function MLPY() {
                     <View style={globalReviews.part}>
                         <Text style={globalReviews.partTitle}>Coefficient de Détermination</Text>
 
-                        <RowView>
+                        <RowViewLink>
                             <LinkedSymb />
-                            <Text 
+                            <Text
                                 style={globalReviews.linkedText}
                                 onPress={() => {
                                     Linking.openURL('https://fr.wikipedia.org/wiki/Coefficient_de_d%C3%A9termination');
                                 }}
                             >
-                                Page Wikipédia
+                                Coefficient de détermination Wikipédia
                             </Text>
-                        </RowView>
+                        </RowViewLink>
 
                         <Image source={require('../assets/coefdeter.png')}/>
 
