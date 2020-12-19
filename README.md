@@ -11,7 +11,7 @@
 WILTY is a mobile app where you can stock all you learn, and access to this data quickly on your phone.
 	
 ## :computer: Technologies
-Chrono_Background is created with:
+WILTY2K20 is created with:
 * JavaScript
 * React Native
 	
